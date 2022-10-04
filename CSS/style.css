@@ -1,0 +1,223 @@
+/* GLOBAL; dung chung cho toàn bộ website */
+/* Dấu *: chọn tất cả thẻ Html */
+* {
+    /* xóa hết các khoảng cách trình duyệt thêm */
+    margin: 0;
+    padding: 0;
+
+    /* giữ nguyên kích thước width của thẻ khi thêm padding */
+    box-sizing: border-box;
+
+
+}
+
+body {
+    background-color: #faf4f2;
+}
+
+/* tạo thẻ rỗng để xóa float  */
+.clear {
+    clear: both;
+}
+
+.header {
+    /* Tên màu có 3 loại 
+    1. tên tiêng anh: red , green
+    2. hex(#): #f8e1db
+    3. Rgb: ren green blue (0, 0 , 0) */
+
+    background-color: #f8e1db;
+    padding: 10px 35px;
+}
+
+.header>ul {
+    /* B1: Xóa dâu chấm tròn */
+    list-style: none;
+}
+
+.header a {
+    /* B2: Xóa gạch chân */
+    text-decoration: none;
+    color: black;
+}
+
+.header li {
+    /* B3: Chuyển li từ block sang inline để các li chung một hàng */
+    display: inline;
+    margin: 10px;
+    /* border: 1px red solid;
+    padding: 10px; */
+}
+
+/* margin, padding
+margin: top, right, bottom, left
+margin: 3px 4px 5px 6px;
+margin: 3px 4px 5px; top-(left + right) bottom
+margin: 3px 4px top + bottom, left + right
+margin: 3px (t,hb,l,r)
+box-model: cách thể hiện của trình duyệt này đối với thẻ html, giúp phân biệt các vùng (margin, padding, border, content) trongnphamj vi của thẻ.
+margin: khoảng cách từ thẻ này tới thẻ khác
+padding: khoảng cách từ content đến border */
+
+/* CAROUSEL */
+.carousel {
+    background-image: url(../img/BG.png);
+    /* Do thẻ carrousel đang bị thiếu height trên trình duyệt => cần thêm chiều cao */
+    height: 700px;
+
+    /* chỉnh kích thước của hình ảnh, cover là phủ hết khung hình của thẻ carrousel */
+    background-size: cover;
+
+    /* background-position: thay đổi vị trí hiển thị mặc định của trình duuyệt là top , left */
+    background-position: center;
+}
+
+/* ACTIVITIES */
+/* display: inline; chỉ áp dụng  cho nội dung đơn giản (chứa 1 con hoặc 1 dòng chữ ngắn) */
+/* float: sắp xếp khối nội dung, hỗ trợ mọi trình duyệt, nhược điểm khó sài */
+.activities__title {
+    text-align: center;
+}
+
+.activities__item {
+
+    float: left;
+    /* kích thươc tối đa của website là 100% */
+    width: 25%;
+    /*width: 100%; nếu kích thước từng thẻ item lớn hơn 25% thì xảy ra Th rớt hàng. Kích thước 1 thẻ được định nghĩa nhưu sau:with = content + padding + border , do đó khi sử dụng margin sẽ bị rớt dòng */
+    padding: 20px;
+
+    text-align: center;
+}
+
+.activities__backgroud {
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.activities__img img {
+    width: 100%;
+    border-radius: 30px;
+}
+
+.activities__img {
+    position: relative;
+}
+
+.activities__img i {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: red;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    background-color: #ffffff80;
+    border-radius: 10px;
+}
+
+.activities__info p {
+    margin: 15px 0;
+    text-align: center;
+}
+
+.activities__info button {
+    padding: 5px 50px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.activities__ViewAll {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.activities__ViewAll button {
+    padding: 10px 65px;
+    border-radius: 40px;
+    border: 1px solid orange;
+    color: orange;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+/* Contact  */
+
+.contact {
+    background-color: #f8e1db;
+    margin-top: 100px;
+}
+
+/* .contact___left {
+    float: left;
+    width: 50%;
+}
+
+.contact__right {
+    float: left;
+    width: 50%;
+} 
+hoặc */
+
+.contact___left,
+.contact___right {
+    float: left;
+    width: 50%;
+    padding: 20px 60px;
+}
+
+.contact___left {
+    background-image: url(./../img/mask.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.contact___right h1 {
+    margin: 10px 0px;
+    padding-top: 20px;
+}
+
+.contact___right p {
+    padding: 15px 0px;
+}
+
+.contact__download,
+.contact__follow {
+    float: left;
+    width: 50%;
+}
+
+/* Footer */
+.footer {
+    background-color: #f8e1db;
+    width: 100%;
+    margin-top: 80px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    padding-bottom: 40px;
+}
+
+.footer_cot1 {
+    float: left;
+    width: 40%;
+    padding: 60px;
+}
+
+.footer_cot2,
+.footer_cot3,
+.footer_cot4 {
+    float: left;
+    width: 20%;
+    padding: 60px;
+
+}
+
+.footer ul>li {
+    list-style: none;
+}
+
+.footer__bottom {
+    text-align: center;
+}

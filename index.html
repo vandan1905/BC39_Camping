@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Camping</title>
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- My Css -->
+    <link rel="stylesheet" href="./CSS/style.css" />
+  </head>
+  <body>
+    <!-- B1: Phân tích bố cục thành phần chính trên giao diện
+    5 thành phần chính thẻ html đại diện cho 5 thành phần chính. thẻ này giớ bạn phân chia thành phần  bố cục là div để biết được div div định nghĩa cho thành phần nào thì chúng ta sử dụng thuộc tính id hoặc class. Ít sử dụng id , chỉ sử dụng id cho liên kết nội và sử lý js -->
+    <div id="header" class="header">
+      <a href="#">
+        <img src="./img/logoicon.png" alt="" />
+      </a>
+      <!-- ul>li*6.a: cú pháp tạo ul li bằng  emmet -->
+      <!-- atl + click chuột; đa con trỏ chuột -->
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Destination</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <!-- .carousel : tạo thẻ div có class carosel bằng cú pháp emmet -->
+    <div class="carousel"></div>
+    <!-- <a href="" class="logo"></a> -->
+    <div class="activities">
+      <!-- BEM: thể hiện mối quan hệ cha con giữa các class -->
+      <!-- activities__title: tenthechinh__tenrieng -->
+      <div class="activities__title">
+        <img src="./img/Group 313.png" alt="" class="activities__img" />
+        <h2>Explore Destination & Activitis</h2>
+      </div>
+      <div class="activities__content">
+        <!-- activities__item: thêm khoảng cách -->
+        <div class="activities__item">
+          <!-- activities__backgroud: thêm màu nền -->
+          <div class="activities__backgroud">
+            <div class="activities__img">
+              <img src="./img/product1.png" alt="" />
+              <!-- trái tim -->
+              <i class="fa-solid fa-heart-pulse"></i>
+            </div>
+            <div class="activities__info">
+              <h3>Tricker Creek Ranch</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio
+                accusantium maiores aut distinctio nemo ipsam quae cupiditate
+                voluptate ut.
+              </p>
+              <button>Read more</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="activities__item">
+          <!-- activities__backgroud: thêm màu nền -->
+          <div class="activities__backgroud">
+            <div class="activities__img">
+              <img src="./img/product1.png" alt="" />
+              <!-- trái tim -->
+              <i class="fa-solid fa-heart-pulse"></i>
+            </div>
+            <div class="activities__info">
+              <h3>Tricker Creek Ranch</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio
+                accusantium maiores aut distinctio nemo ipsam quae cupiditate
+                voluptate ut.
+              </p>
+              <button>Read more</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="activities__item">
+          <!-- activities__backgroud: thêm màu nền -->
+          <div class="activities__backgroud">
+            <div class="activities__img">
+              <img src="./img/product1.png" alt="" />
+              <!-- trái tim -->
+              <i class="fa-solid fa-heart-pulse"></i>
+            </div>
+            <div class="activities__info">
+              <h3>Tricker Creek Ranch</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio
+                accusantium maiores aut distinctio nemo ipsam quae cupiditate
+                voluptate ut.
+              </p>
+              <button>Read more</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="activities__item">
+          <!-- activities__backgroud: thêm màu nền -->
+          <div class="activities__backgroud">
+            <div class="activities__img">
+              <img src="./img/product1.png" alt="" />
+              <!-- trái tim -->
+              <i class="fa-solid fa-heart-pulse"></i>
+            </div>
+            <div class="activities__info">
+              <h3>Tricker Creek Ranch</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio
+                accusantium maiores aut distinctio nemo ipsam quae cupiditate
+                voluptate ut.
+              </p>
+              <button>Read more</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- clear float (xoá ảnh hưởng của float) -->
+      <div class="clear"></div>
+      <div class="activities__ViewAll">
+        <button>ViewAll</button>
+      </div>
+    </div>
+    <!-- CONTACT  -->
+    <div class="contact">
+      <div class="contact___left">
+        <img src="./img/homeicon.png" alt="" />
+      </div>
+      <div class="contact___right">
+        <h1>Let's Stay In Touch</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum
+          voluptatibus nisi ipsa incidunt tempora odit.
+        </p>
+        <div class="contact__download">
+          <h2>Dowload Our App</h2>
+          <img src="./img/download-on-the-app-store-apple-1.png" alt="" />
+          <img src="./img/google-play-badge-1.png" alt="" />
+        </div>
+        <div class="contact__follow">
+          <h2>Follow Us</h2>
+          <i class="fa-brands fa-square-facebook"></i></i>
+          <i class="fa-brands fa-youtube"></i></i>
+          <i class="fa-brands fa-instagram"></i></i>
+          <i class="fa-brands fa-pinterest"></i></i>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div class="footer">
+       <div class="footer__top">
+        <div class="footer_cot1">
+          <h2>Hipcamp is everywhere you want to camp</h2>
+          <p><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus aliquam rerum voluptas recusandae cupiditate est corrupti vel facilis qui eaque saepe distinctio, illum asperiores sunt. Similique fugit minus exercitationem asperiores.</p>
+        </div>
+        <div class="footer_cot2">
+          <h2>Let Us Help Me</h2>
+         <p>
+           <br> About   <br> Rules & Reservation <br> Policies <br> Accessibility <br>  Media Center
+        </p>
+          
+        </div>
+        <div class="footer_cot3">
+          <h2>Plan with Us</h2>
+        <p>
+            <br>Find Trip Inspiration<br>Build a Trip<br> Buy a Pass<br>Enter a Lottery
+          </p>
+        </div>
+        <div class="footer_cot4">
+          <h2>Let Us Help You</h2>
+          <p>
+            <br>Your Accout<br>Your Reservation<br>Contact us<br>Help Center<br> Summit Feedback
+          </p>
+        </div>
+<div class="clear"></div>
+       </div>
+       <div class="footer__bottom">
+        <p><i class="fa-regular fa-copyright"></class=></i>2022.ALl right reserved.</p>
+       </div>
+
+    </div>
+  </body>
+</html>
